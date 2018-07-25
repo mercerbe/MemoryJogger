@@ -9,9 +9,9 @@ const IconCard = props => (
       key=""
       className='iconCards'
       color='teal'
-      icon={props.icon}
+      image={props.icon}
       id={props.id}
-      onClick={() => props.mix(props.id)}
+      onClick={() => props.mixIcons(props.id)}
       />
   </Card.Group>
 )
