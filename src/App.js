@@ -1,23 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Icons from './icons.json'
 //components
-import CardGroup from './components/card'
+import { Segment } from 'semantic-ui-react'
+import IconCard from './components/card'
+import PageHeader from './components/header'
+import PageMenu from './components/menu'
 
 class App extends Component {
+
+  //state
+  state = {
+    Icons,
+    clickedIcons: [],
+    score: 0,
+    win: 12,
+    alert: ""
+  }
+
+  //mix icons function
+  mixIcons = id => {
+    let clickedIcons = this.state.clickedIcons
+
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div className="mainWrapper">
-          <CardGroup/>
-        </div>
+      <div>
+        <Segment inverted>
+        <PageMenu score={this.state.score} alert={this.state.alert} />
+        <PageHeader/>
+        </Segment>
       </div>
 
     );

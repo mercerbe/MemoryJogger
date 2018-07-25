@@ -1,14 +1,18 @@
 import React from 'react'
-import {Card} from 'semantic-ui-react'
+//semantic card
+import { Card } from 'semantic-ui-react'
 
-const Icon = () => (
-  <Icon name='trophy' size='massive' />
-)
 
-const CardGroup = () => (
+const IconCard = props => (
   <Card.Group itemsPerRow = {4}>
-    <Card color="teal" image={Icon} />
+    <Card
+      className='iconCards'
+      color='teal'
+      image={props.image}
+      id={props.id}
+      onClick={() => props.mix(props.id)}
+      />
   </Card.Group>
 )
 
-export default CardGroup
+export default IconCard
