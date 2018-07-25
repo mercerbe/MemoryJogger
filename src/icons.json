@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "image": ""
+    "icon": "./icons/arrows.png"
   },
   {
     "id": 2,
-    "image": ""
+    "icon": "./icons/bank.png"
   },
   {
     "id": 3,
-    "image": ""
+    "icon": "./icons/bulb.png"
   },
   {
     "id": 4,
-    "image": ""
+    "icon": "./icons/coffee.png"
   },
   {
     "id": 5,
-    "image": ""
+    "icon": "./icons/cog.png"
   },
   {
     "id": 6,
-    "image": ""
+    "icon": "./icons/comp.png"
   },
   {
     "id": 7,
-    "image": ""
+    "icon": "./icons/grill.png"
   },
   {
     "id": 8,
-    "image": ""
+    "icon": "./icons/lightning.png"
   },
   {
     "id": 9,
-    "image": ""
+    "icon": "./icons/map.png"
   },
   {
     "id": 10,
-    "image": ""
+    "icon": "./icons/paper.png"
   },
   {
     "id": 11,
-    "image": ""
+    "icon": "./icons/sound.png"
   },
   {
     "id": 12,
-    "image": ""
+    "icon": "./icons/specs.png"
   }
 ]
