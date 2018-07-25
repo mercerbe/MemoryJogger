@@ -8,6 +8,10 @@ import PageHeader from './components/header'
 import PageMenu from './components/menu'
 import PageFooter from './components/footer'
 
+const styles = {
+  background: "rgb(109,255,255)"
+}
+
 class App extends Component {
 
   //set state
@@ -31,6 +35,7 @@ class App extends Component {
     } else {
       //push new icon to clicked array
       clickedIcons.push(id)
+      console.log(clickedIcons)
 
       //check for win
       if (clickedIcons.length === 12) {
@@ -48,7 +53,7 @@ class App extends Component {
 
   //render components
   render() {
-    return (<div>
+    return (<div style={styles}>
       <Segment inverted>
         <PageMenu score={this.state.score} alert={this.state.alert}/>
         <PageHeader/>
