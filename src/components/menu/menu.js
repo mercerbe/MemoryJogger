@@ -4,9 +4,9 @@ import { Menu } from 'semantic-ui-react'
 
 const PageMenu = props => (
   <Menu inverted>
-    <Menu.Item name='alerts: {props.alert}'/>
+    <Menu.Item>Alerts: {props.alert}</Menu.Item>
     <Menu.Menu position='right'>
-    <Menu.Item name='score: {props.score}'/>
+    <Menu.Item>Score: {props.score}</Menu.Item>
     </Menu.Menu>
   </Menu>
 )

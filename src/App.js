@@ -8,8 +8,18 @@ import PageHeader from './components/header'
 import PageMenu from './components/menu'
 import PageFooter from './components/footer'
 
+//styles
 const styles = {
   background: "rgb(109,255,255)"
+}
+
+//fisher-yates shuffle for rearranging
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }
 
 class App extends Component {
@@ -44,10 +54,8 @@ class App extends Component {
       }
       //if new icon is clicked
       this.setState({Icons, clickedIcons, score: clickedIcons.length, alert: `Nice! You've got ${clickedIcons.length} out of 12!`})
-      //rearrange Icons
-      Icons.sort(function() {
-        return 0.5 - Math.random()
-      })
+      //rearrange Icons with shuffle
+      shuffle(Icons)
     }
   }
 

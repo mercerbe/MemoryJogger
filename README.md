@@ -11,7 +11,7 @@ react app using state to let users play a click-based memory game
 
 ## Demo
 
-You can demo this web app on heroku at:  [MemoryJogger](https://)
+You can demo this web app on github pages at:  [MemoryJogger](https://mercerbe.github.io/MemoryJogger/)
 
 ## Installation
 
