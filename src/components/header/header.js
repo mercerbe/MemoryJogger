@@ -1,6 +1,7 @@
 import React from 'react'
 //import semantic header here
 import { Header, Segment, Icon } from 'semantic-ui-react'
+import StartModal from '../modal/modal'
 
 const PageHeader = () => (
   <Segment inverted>
@@ -11,6 +12,9 @@ const PageHeader = () => (
     <Header as='h5' inverted color='grey' textAlign='center'>
       Click all 12 icons without repeating any to win!
     </Header>
+    <Header textAlign='center'>
+      <StartModal />
+    </Header>  
   </Segment>
 )
 

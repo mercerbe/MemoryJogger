@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './App.css'
 import Icons from './icons.json'
 //components
-import {Segment, Container} from 'semantic-ui-react'
+import {Segment, Container, Card } from 'semantic-ui-react'
 import IconCard from './components/card'
 import PageHeader from './components/header'
 import PageMenu from './components/menu'
@@ -30,7 +30,7 @@ class App extends Component {
     //if an icon is clicked twice
     if (clickedIcons.includes(id)) {
       //loss, reset state
-      this.setSate({clickedIcons: [], score: 0, alert: "Game Over! Click an icon to play again."})
+      this.setState({clickedIcons: [], score: 0, alert: "Game Over! Click an icon to play again."})
       return
     } else {
       //push new icon to clicked array
@@ -60,7 +60,9 @@ class App extends Component {
       </Segment>
       <Container>
         <Segment inverted>
+          <Card.Group itemsPerRow={4}>
           {this.state.Icons.map(icon => (<IconCard key={icon.key} id={icon.id} mixIcons={this.mixIcons} icon={icon.icon}/>))}
+        </Card.Group>
         </Segment>
       </Container>
       <br/>

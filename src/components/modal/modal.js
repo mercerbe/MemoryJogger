@@ -1,6 +1,6 @@
 import React from 'react'
 //semantic modal
-import { Button, Header, Icon, Modal } from 'semantic-ui-react'
+import { Button, Header, Modal } from 'semantic-ui-react'
 
 const StartModal = () => (
   <Modal trigger={<Button>Instructions</Button>} basic size='small'>
